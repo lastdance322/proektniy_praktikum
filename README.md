@@ -40,10 +40,14 @@
 | **YOLOv10n** | 0.548 | 0.347 | 0.7 ms |
 
 ## 7. Графики результатов
-* YOLOv8[YOLOv8](runs/detect/runs/detect/yolov8_kitti-2/results.png)
-* YOLOv10[YOLOv10](runs/detect/runs/detect/yolov10_kitti-2/results.png)
-* YOLOv11[YOLOv11](runs/detect/runs/detect/yolo11_kitti/results.png)
-* RE-DETR[RE-DETR](runs/detect/runs/detect/rtdetr_kitti/results.png)
+* YOLOv8
+![YOLOv8](runs/detect/runs/detect/yolov8_kitti-2/results.png)
+* YOLOv10
+![YOLOv10](runs/detect/runs/detect/yolov10_kitti-2/results.png)
+* YOLOv11
+![YOLOv11](runs/detect/runs/detect/yolo11_kitti/results.png)
+* RE-DETR
+![RE-DETR](runs/detect/runs/detect/rtdetr_kitti/results.png)
 
 ## 7. Вывод
 Трансформер **RT-DETR-l** является абсолютным лидером по точности (mAP@50 = 0.898) и лучше всего справляется со сложными сценами, но требует больше ресурсов. Модели **YOLOv8** и **YOLO11** показывают отличную скорость (0.5–0.7 мс на кадр), что делает их оптимальным выбором для развертывания на устройствах с ограниченной вычислительной мощностью.
