@@ -7,6 +7,9 @@ def main():
         data="kitti.yaml",
         epochs=50,
         imgsz=640,
+        batch=16,
+        device=0,
+        patience=10,
         project="runs/detect",
         name="yolov10_kitti"
     )

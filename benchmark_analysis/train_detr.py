@@ -7,7 +7,9 @@ def main():
         data="kitti.yaml",
         epochs=50,
         imgsz=640,
-        batch=4, 
+        batch=16,
+        device=0,
+        patience=10,
         project="runs/detect",
         name="rtdetr_kitti"
     )
