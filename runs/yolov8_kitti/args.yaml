@@ -1,11 +1,11 @@
 task: detect
 mode: train
-model: rtdetr-l.pt
+model: yolov8n.pt
 data: kitti.yaml
 epochs: 50
 time: null
 patience: 100
-batch: 4
+batch: 16
 imgsz: 640
 save: true
 save_period: -1
@@ -13,7 +13,7 @@ cache: false
 device: ''
 workers: 8
 project: runs/detect
-name: rtdetr_kitti
+name: yolov8_kitti
 exist_ok: false
 pretrained: true
 cls_remap: true
@@ -111,4 +111,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: tracktrack.yaml
-save_dir: /mnt/d/cv_project/runs/detect/runs/detect/rtdetr_kitti
+save_dir: /mnt/d/cv_project/runs/yolov8_kitti

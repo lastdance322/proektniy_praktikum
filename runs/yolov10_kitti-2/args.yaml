@@ -1,6 +1,6 @@
 task: detect
 mode: train
-model: yolo11n.pt
+model: yolov10n.pt
 data: kitti.yaml
 epochs: 50
 time: null
@@ -13,7 +13,7 @@ cache: false
 device: ''
 workers: 8
 project: runs/detect
-name: yolo11_kitti
+name: yolov10_kitti-2
 exist_ok: false
 pretrained: true
 cls_remap: true
@@ -111,4 +111,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: tracktrack.yaml
-save_dir: /mnt/d/cv_project/runs/detect/runs/detect/yolo11_kitti
+save_dir: /mnt/d/cv_project/runs/yolov10_kitti-2

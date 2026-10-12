@@ -1,6 +1,6 @@
 # Разработка нейросетевой системы детекции объектов дорожной сцены с использованием архитектур YOLO и RT-DETR
 
-![Баннер проекта](runs/detect/runs/detect/rtdetr_kitti/train_batch0.jpg)
+![Баннер проекта](runs/rtdetr_kitti/train_batch0.jpg)
 
 ## 1. Введение
 Для того чтобы беспилотные автомобили могли безопасно ездить, они должны отлично "видеть" и понимать, что происходит на дороге. В этой работе проводится бенчмаркинг двух современных архитектур: скоростного семейства YOLO и высокоточной трансформерной модели RT-DETR. Разработка выполнена в подсистеме Linux (WSL) для приближения процесса к реальным индустриальным стандартам.
@@ -41,17 +41,17 @@
 
 ## 7. Графики результатов
 * YOLOv8
-![YOLOv8](runs/detect/runs/detect/yolov8_kitti-2/results.png)
+![YOLOv8](runs/yolov8_kitti-2/results.png)
 * YOLOv10
-![YOLOv10](runs/detect/runs/detect/yolov10_kitti-2/results.png)
+![YOLOv10](runs/yolov10_kitti-2/results.png)
 * YOLOv11
-![YOLOv11](runs/detect/runs/detect/yolo11_kitti/results.png)
+![YOLOv11](runs/yolo11_kitti/results.png)
 * RE-DETR
-![RE-DETR](runs/detect/runs/detect/rtdetr_kitti/results.png)
+![RE-DETR](runs/rtdetr_kitti/results.png)
 
 ## 7. Вывод
 Трансформер **RT-DETR-l** является абсолютным лидером по точности (mAP@50 = 0.898) и лучше всего справляется со сложными сценами, но требует больше ресурсов. Модели **YOLOv8** и **YOLO11** показывают отличную скорость (0.5–0.7 мс на кадр), что делает их оптимальным выбором для развертывания на устройствах с ограниченной вычислительной мощностью.
 
 ## Как запустить код
-Установить зависимости командой: pip install -r requirements.txt
-Запустить сам скрипт командой: python train_detr.py (для другой модели другое название файла)
+* Установить зависимости командой: pip install -r requirements.txt
+* Запустить сам скрипт командой: python train_detr.py (для другой модели другое название файла)
